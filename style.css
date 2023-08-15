@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url(img/static.jpg);
+    margin: 0;
+    color:black;
+    font-family: 'Handjet', cursive;
+}
+.logo{
+    font-size:x-large;
+    color:#FFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor{
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.contenedor div{
+    font-family: 'Handjet', cursive;
+    background-color: rgba(255, 255, 255, 0.301);
+    color:black;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 5px;
+    border:4px dotted #ffffffa9 ;
+}
+.contenedor-login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contenedor-login-form a{
+    font-size:large;
+    font-style:oblique;
+    margin-bottom: 5px;
+}
+.contenedor-login-form input{
+    border-radius: 5px;
+    width: 250px;
+    background-color: rgb(207, 198, 185);
+    margin-bottom: 5px;
+}
+.contenedor-login-form button{
+    background-color: rgba(0, 0, 0, 0.452);
+    color:white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.contenedor-register-form a{
+    font-size:large;
+    font-style:oblique;
+    margin-bottom: 5px;
+}
+.contenedor-register-form input{
+    border-radius: 5px;
+    width: 250px;
+    background-color: rgb(207, 198, 185);
+    margin-bottom: 5px;
+}
+.contenedor-register-form button{
+    background-color: rgba(0, 0, 0, 0.452);
+    color:white;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.contenedor-register{
+    display: none;
+}
+.contenedor-register-form{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.linkedin{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.github{
+    width: 23px;
+    height: 23px;
+    margin-right: 5px
+}

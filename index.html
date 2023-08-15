@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="logo">
+        <img src="img/Logo.png" height="60px" width="200px">
+
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/brian-texon-b0667a258/">Linkedin
+            <img src="img/linkedin.png" alt="" class="linkedin"></a>
+
+            <a href="https://github.com/BrianTex">GitHub
+            <img src="img/github.png" alt="" class="github"></a>
+        </div>
+    </header>
+
+    <div class="contenedor">
+
+        <div class="contenedor-login" id="contenedor-login">
+            <form action="" class="contenedor-login-form" onsubmit="return false">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" placeholder="email@dominio.com">
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña">
+
+                <a href="">¿Se ha olvidado de la contraseña?</a>
+                <a href="">¿Problemas al intentar iniciar sesion?</a>
+                
+                <button class="btn-iniciar">Iniciar</button>
+
+                <button id="btn-sinsesion" class="btn-sinsesion">Aun no tengo cuenta</button>
+            </form>
+        </div>
+
+        <div id="contenedor-register" class="contenedor-register">
+
+            <form action="" class="contenedor-register-form" onsubmit="return false">
+                <label for="nombre">Nombre:</label>
+                <input type="text">
+            
+                <label for="correo">Correo:</label>
+                <input type="email" placeholder="email@dominio.com">
+            
+                <label for="contraseña">Contraseña:</label>
+                <input type="password">
+
+                <a href="">¿Problemas al intentar registrarte?</a>
+            
+                <button class="btn-registrar">Registrar</button>
+            
+                <button id="btn-consesion" class="btn-consesion">Ya tengo una cuenta</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script>
+    var registrar= document.getElementById('contenedor-register');
+    var login= document.getElementById('contenedor-login')
+    var btn=document.querySelector('#btn-sinsesion');
+    var btn2=document.querySelector('#btn-consesion');
+
+    btn.onclick=ocultarAparecer;
+    btn2.onclick=aparecerOcultar;
+
+    function aparecerOcultar(){
+        registrar.style.display="none";
+        login.style.display="flex";
+    }
+
+    function ocultarAparecer(){
+        registrar.style.display="flex";
+        login.style.display="none"
+    }
+    
+    
+</script>
+</html>
