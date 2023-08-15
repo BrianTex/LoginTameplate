@@ -88,3 +88,10 @@ body{
     height: 23px;
     margin-right: 5px
 }
+@media(max-width: 500px){
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px  0px;
+    }
+}
